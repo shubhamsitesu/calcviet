@@ -1,1 +1,720 @@
-
+root {
+            --primary-color: #4285f4; /* Google blue */
+            --secondary-color: #34a853; /* Google green */
+            --accent-color: #ea4335; /* Google red */
+            --dark-color: #202124;
+            --light-color: #f8f9fa;
+            --gray-color: #5f6368;
+            --light-gray: #dadce0;
+            --white: #ffffff;
+            --button-bg: #f1f3f4;
+            --button-hover: #e8eaed;
+            --function-bg: #e8f0fe;
+            --function-hover: #d2e3fc;
+            --operator-bg: #e8f0fe;
+            --operator-hover: #d2e3fc;
+            --equals-bg: #4285f4;
+            --equals-hover: #3367d6;
+            --clear-bg: #f8f9fa;
+            --clear-hover: #f1f3f4;
+            --clear-border: #dadce0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        .header {
+            background-color: var(--white);
+            box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-size: 22px;
+            font-weight: 500;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            font-size: 24px;
+            color: var(--primary-color);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 25px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 500;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: var(--dark-color);
+        }
+        
+        /* Mobile Menu Styles */
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: var(--white);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 999;
+            padding: 15px 0;
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+        
+        .mobile-menu-links {
+            list-style: none;
+            padding: 0 15px;
+        }
+        
+        .mobile-menu-links li {
+            margin-bottom: 15px;
+        }
+        
+        .mobile-menu-links li:last-child {
+            margin-bottom: 0;
+        }
+        
+        .mobile-menu-links a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 500;
+            font-size: 16px;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        
+        .mobile-menu-links a:hover {
+            background-color: var(--light-color);
+            color: var(--primary-color);
+        }
+        
+        /* Breadcrumbs - Reduced size */
+        .breadcrumbs {
+            background-color: var(--light-color);
+            padding: 4px 0;       /* Reduced padding */
+            font-size: 12px;      /* Smaller font size */
+            line-height: 1.2;     /* Tighter line height */
+        }
+        
+        .breadcrumbs a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        
+        .breadcrumbs .separator {
+            margin: 0 5px;        /* Reduced margin */
+            color: var(--gray-color);
+        }
+        
+        /* Calculator Section - Reduced top padding */
+        .calculator-section {
+            padding: 30px 0;      /* Reduced top padding */
+            background-color: var(--white);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .section-title h1 {
+            font-size: 32px;
+            color: var(--dark-color);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .section-title h2 {
+            font-size: 28px;
+            color: var(--dark-color);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .section-title p {
+            font-size: 16px;
+            color: var(--gray-color);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Calculator Styles */
+        .calculator { 
+            background: #ccc; 
+            padding: 15px; 
+            border-radius: 20px; 
+            box-shadow: inset -3px -3px 7px #fff, inset 3px 3px 7px rgba(0,0,0,0.4); 
+            width: 100%; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            position: relative; 
+        }
+        
+        .calculator .header { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-bottom: 10px; 
+            align-items: center; 
+            position: relative; 
+            background: none;
+            box-shadow: none;
+        }
+        
+        #historyBtn { 
+            background: transparent; 
+            border: none; 
+            cursor: pointer; 
+            font-size: 24px; 
+            color: #333; 
+        }
+        
+        #modeToggle { 
+            display: flex; 
+            gap: 2px; 
+        }
+        
+        #modeToggle button { 
+            padding: 6px 12px; 
+            border: none; 
+            border-radius: 6px; 
+            margin: 0 2px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            background: #aaa; 
+            color: #000; 
+            user-select: none; 
+            position: relative; 
+            z-index: 1; 
+        }
+        
+        #modeToggle button.active { 
+            background: #555; 
+            color: #fff; 
+        }
+        
+        .display-container { 
+            background: #e6e6e6; 
+            border-radius: 6px; 
+            padding: 12px 20px; 
+            margin-bottom: 15px; 
+        }
+        
+        #expression { 
+            font-size: 16px; 
+            color: #666; 
+            text-align: right; 
+            min-height: 20px; 
+            overflow-x: auto; 
+            white-space: nowrap; 
+            margin-bottom: 5px; 
+        }
+        
+        #display {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: right;
+  min-height: 35px;
+  overflow-x: auto;
+  white-space: nowrap;
+  color: #111;
+  outline: none;
+  cursor: text;
+  user-select: text;
+  padding-top: 10px; /* Add this line */
+}
+        
+        .buttons-container { 
+            display: flex; 
+            gap: 10px; 
+        }
+        
+        .buttons, .sci-buttons { 
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 10px; 
+            margin-top: 10px; 
+            flex: 1; 
+        }
+        
+        .sci-buttons { 
+            display: none; 
+        }
+        
+        .calculator button { 
+            background: #b0b0b0; 
+            border: none; 
+            padding: 10px 0; 
+            font-size: 16px; 
+            font-weight: bold; 
+            border-radius: 6px; 
+            color: #000; 
+            height: 40px; 
+            box-shadow: -2px -2px 4px #fff, 2px 2px 4px rgba(0, 0, 0, 0.4); 
+            cursor: pointer; 
+            user-select: none; 
+            transition: background 0.2s, transform 0.1s; 
+        }
+        
+        .calculator button:hover { 
+            background: #a0a0a0; 
+        }
+        
+        .calculator button:active { 
+            background: #999; 
+            transform: scale(0.97); 
+        }
+        
+        .deg-rad { 
+            grid-column: span 4; 
+            display: flex; 
+            justify-content: center; 
+            gap: 15px; 
+            margin-top: 5px; 
+            user-select: none; 
+        }
+        
+        .deg-rad label { 
+            font-size: 14px; 
+        }
+        
+        /* Enhanced Modal Styles */
+        .modal-overlay { 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100vw; 
+            height: 100vh; 
+            background: rgba(0,0,0,0.7); /* Darker background */
+            display: none; 
+            justify-content: center; 
+            align-items: center; 
+            z-index: 9999; /* Much higher z-index */
+            padding: 20px; /* Add padding */
+        }
+        
+        .modal-overlay.active { 
+            display: flex; 
+        }
+        
+        .modal { 
+            background: #ffffff; /* Changed to white for better contrast */
+            border-radius: 15px; 
+            padding: 25px; /* Increased padding */
+            width: 90%; 
+            max-width: 400px; /* Increased max width */
+            max-height: 80vh; /* Increased max height */
+            overflow-y: auto; 
+            position: relative; 
+            z-index: 10000; /* Higher z-index */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* Enhanced shadow */
+            border: 1px solid #e0e0e0; /* Added border */
+        }
+        
+        .modal h2 { 
+            margin-top: 0; 
+            text-align: center; 
+            color: var(--primary-color); /* Changed color */
+            font-size: 22px; /* Increased font size */
+            margin-bottom: 20px; /* Increased margin */
+            padding-bottom: 10px; /* Added padding */
+            border-bottom: 1px solid #eee; /* Added border */
+        }
+        
+        .history-item { 
+            background: #f9f9f9; /* Lighter background */
+            border-radius: 8px; 
+            padding: 12px 15px; /* Increased padding */
+            margin-bottom: 12px; /* Increased margin */
+            font-family: 'Roboto', monospace; /* Changed font */
+            cursor: pointer; 
+            user-select: text; 
+            transition: background 0.2s; 
+            white-space: nowrap; 
+            overflow-x: auto; 
+            max-width: 100%; 
+            border-left: 4px solid var(--primary-color); /* Added left border */
+        }
+        
+        .history-item:hover { 
+            background: #f0f7ff; /* Changed hover color */
+        }
+        
+        .close-btn { 
+            position: absolute; 
+            top: 15px; 
+            right: 15px; 
+            background: transparent; 
+            border: none; 
+            font-size: 24px; 
+            cursor: pointer; 
+            color: #666; /* Changed color */
+            width: 32px; /* Fixed width */
+            height: 32px; /* Fixed height */
+            display: flex; /* Added flex */
+            align-items: center; /* Added align */
+            justify-content: center; /* Added justify */
+            border-radius: 50%; /* Added border radius */
+            transition: background-color 0.2s; /* Added transition */
+        }
+        
+        .close-btn:hover { 
+            background: #f0f0f0; /* Added hover background */
+            color: #333; /* Changed hover color */
+        }
+        
+        .power-expr { 
+            display: inline-block; 
+            position: relative; 
+            vertical-align: baseline; 
+        }
+        
+        .power-expr .base { 
+            display: inline-block; 
+            vertical-align: baseline; 
+        }
+        
+        .power-expr .exp { 
+  font-size: 0.6em; 
+  vertical-align: super; 
+  line-height: 0; 
+  position: relative; 
+  top: -0.3em; 
+  border: 1px solid #555; 
+  padding: 0.1em 0.2em;      /* Added padding for better spacing */
+  width: auto; 
+  min-width: 0.8em;          /* Made the initial box smaller */
+  height: auto; 
+  min-height: 1.2em;
+  display: inline-block;     /* Changed from flex to prevent centering */
+  background-color: #f0f0f0;
+  border-radius: 2px;
+  margin-left: 2px;
+  cursor: text;
+}
+        
+        .power-expr .exp.typed {
+  border: none;
+  background: none;
+  padding: 0;
+  min-width: 0;
+  /* The margin-left is now inherited and consistent */
+}
+        
+        .exp-x-expr { 
+            display: inline-block; 
+            position: relative; 
+            vertical-align: baseline; 
+        }
+        
+        .exp-x-expr .base { 
+            display: inline-block; 
+            vertical-align: baseline; 
+            font-style: italic;
+        }
+        
+        .exp-x-expr .exp { 
+  font-size: 0.6em; 
+  vertical-align: super; 
+  line-height: 0; 
+  position: relative; 
+  top: -0.3em; 
+  border: 1px solid #555; 
+  padding: 0.1em 0.2em;      /* Added padding for better spacing */
+  width: auto; 
+  min-width: 0.8em;          /* Made the initial box smaller */
+  height: auto; 
+  min-height: 1.2em;
+  display: inline-block;     /* Changed from flex to prevent centering */
+  background-color: #f0f0f0;
+  border-radius: 2px;
+  margin-left: 2px;
+  cursor: text;
+}
+        .exp-x-expr .exp.typed {
+  border: none;
+  background: none;
+  padding: 0;
+  min-width: 0;
+  /* The margin-left is now inherited and consistent */
+}
+        
+        .history-power .base { 
+            display: inline-block; 
+            vertical-align: baseline; 
+        }
+        
+        .history-power .exp { 
+            font-size: 0.7em; 
+            vertical-align: super; 
+            line-height: 0; 
+            position: relative; 
+            top: -0.2em; 
+        }
+        
+        /* Desktop layout - show both button sets */
+        @media (min-width: 769px) {
+            .calculator { max-width: 800px; }
+            .buttons-container { display: flex; }
+            .buttons { display: grid; }
+            .sci-buttons { display: grid; }
+            #modeToggle { display: none; } /* Hide mode toggle on desktop */
+        }
+        
+        /* Mobile layout - keep current behavior */
+        @media (max-width: 768px) {
+            .calculator { max-width: 400px; }
+            .buttons-container { display: block; }
+            .sci-buttons { display: none; }
+            #modeToggle { display: flex; } /* Show mode toggle on mobile */
+            
+            /* Enhanced mobile modal styles */
+            .modal { 
+                width: 95%; 
+                max-width: 350px; 
+                padding: 20px; 
+            }
+            
+            .modal h2 { 
+                font-size: 20px; 
+                margin-bottom: 15px; 
+            }
+            
+            .history-item { 
+                padding: 10px 12px; 
+                margin-bottom: 10px; 
+                font-size: 14px; 
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .calculator { padding: 10px; }
+            #display { font-size: 22px; min-height: 30px; }
+            #expression { font-size: 14px; }
+            .calculator button { font-size: 14px; height: 35px; }
+            
+            /* Further enhanced mobile modal styles */
+            .modal { 
+                width: 98%; 
+                max-width: 320px; 
+                padding: 15px; 
+            }
+            
+            .modal h2 { 
+                font-size: 18px; 
+                margin-bottom: 12px; 
+            }
+            
+            .history-item { 
+                padding: 8px 10px; 
+                margin-bottom: 8px; 
+                font-size: 13px; 
+            }
+        }
+        
+        /* Summary Section */
+        .summary-section {
+            padding: 60px 0;
+            background-color: var(--white);
+        }
+        
+        .summary-content {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--dark-color);
+        }
+        
+        .summary-content h3 {
+            font-size: 24px;
+            color: var(--primary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        .summary-content p {
+            margin-bottom: 20px;
+        }
+        
+        .summary-content ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .summary-content li {
+            margin-bottom: 10px;
+        }
+        
+        /* Features Section */
+        .features-section {
+            padding: 60px 0;
+            background-color: var(--light-color);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+            font-weight: 500;
+        }
+        
+        .feature-card p {
+            color: var(--gray-color);
+            margin-bottom: 20px;
+        }
+        
+        /* Calculators Section */
+        .calculators-section {
+            padding: 60px 0;
+            background-color: var(--white);
+        }
+        
+        .calculators-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .calculator-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid var(--light-gray);
+        }
+        
+        .calculator-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .calculator-card-img {
+            height: 160px;
+            background-color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .calculator-card-img i {
+            font-size: 60px;
+            color: var(--white);
+        }
+        
+        .calculator-card-body {
+            padding: 20px;
+        }
+        
+        .calculator-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+            font-weight: 500;
+        }
+        
+        .calculator-card p {
+            color: var(--gray-color);
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        .calculator-card a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            display: inline-flex;
+            align
