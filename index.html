@@ -1,1 +1,892 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Schema.org markup for Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "May-tinh.com",
+        "alternateName": ["Máy Tính Online", "Máy Tính Việt Nam"],
+        "url": "https://may-tinh.com",
+        "logo": "https://may-tinh.com/logo.png",
+        "image": "https://may-tinh.com/images/calculator-og.jpg",
+        "description": "Nền tảng máy tính trực tuyến hàng đầu Việt Nam cung cấp các công cụ tính toán miễn phí",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Đường Lê Lợi",
+            "addressLocality": "Hà Nội",
+            "postalCode": "100000",
+            "addressCountry": "VN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 21.028511,
+            "longitude": 105.804817
+        },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "email": "contact@may-tinh.com",
+        "serviceArea": {
+            "@type": "Country",
+            "name": "Việt Nam"
+        },
+        "areaServed": ["Hà Nội", "TP. Hồ Chí Minh", "Đà Nẵng", "Hải Phòng", "Cần Thơ", "Biên Hòa", "Nha Trang", "Buôn Ma Thuột", "Huế", "Vinh"],
+        "sameAs": [
+            "https://www.facebook.com/maytinhcom",
+            "https://twitter.com/maytinhcom",
+            "https://www.youtube.com/@maytinhcom"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Dịch vụ Máy Tính Online",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Máy tính khoa học",
+                        "description": "Công cụ tính toán khoa học với các hàm lượng giác, logarit, lũy thừa"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Máy tính tài chính",
+                        "description": "Công cụ tính lãi suất, vay vốn, đầu tư, tiết kiệm"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Máy tính BMI",
+                        "description": "Công cụ tính chỉ số khối cơ thể và đánh giá sức khỏe"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <!-- Service Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Máy tính trực tuyến",
+        "provider": {
+            "@type": "Organization",
+            "name": "May-tinh.com"
+        },
+        "areaServed": "Việt Nam",
+        "serviceOutput": {
+            "@type": "Thing",
+            "name": "Kết quả tính toán chính xác"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Dịch vụ Máy Tính Online",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Máy tính cơ bản",
+                        "description": "Công cụ tính toán cộng, trừ, nhân, chia, phần trăm"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Máy tính chuyển đổi",
+                        "description": "Chuyển đổi đơn vị đo lường, tiền tệ, nhiệt độ"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "May-tinh.com",
+        "alternateName": "Máy Tính Online",
+        "url": "https://may-tinh.com",
+        "description": "Nền tảng máy tính trực tuyến hàng đầu Việt Nam",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://may-tinh.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Trang chủ",
+                "item": "https://may-tinh.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Máy tính",
+                "item": "https://may-tinh.com#calculator"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Máy tính khoa học",
+                "item": "https://may-tinh.com#scientific"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://may-tinh.com/" />
+    
+    <!-- Title Tag with Keywords -->
+    <title>Máy Tính - Máy Tính Online Khoa Học, Điện Tử, Miễn Phí | May-tinh.com</title>
+    
+    <!-- Meta Description with Keywords -->
+    <meta name="description" content="Máy tính online miễn phí, máy tính khoa học, máy tính điện tử cho học sinh. Máy tính đơn giản, chính xác, nhanh chóng. Dễ sử dụng trên mọi thiết bị. Máy Tính tốt nhất Việt Nam!" />
+    
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="máy tính, máy tính online, máy tính khoa học, máy tính điện tử, máy tính miễn phí, máy tính đơn giản, máy tính cho học sinh, may tinh, máy tính cơ bản, máy tính tài chính, máy tính bmi, máy tính chuyển đổi" />
+    
+    <!-- Author and Copyright -->
+    <meta name="author" content="May-tinh.com" />
+    <meta name="copyright" content="© 2023 May-tinh.com" />
+    
+    <!-- Robots Meta Tag -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    
+    <!-- Language and Geo Targeting -->
+    <meta name="content-language" content="vi" />
+    <meta name="geo.region" content="VN" />
+    <meta name="geo.placename" content="Việt Nam" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Máy Tính - Máy Tính Online Khoa Học, Điện Tử, Miễn Phí | May-tinh.com" />
+    <meta property="og:description" content="Máy tính online miễn phí, máy tính khoa học, máy tính điện tử cho học sinh. Máy tính đơn giản, chính xác, nhanh chóng. Dễ sử dụng trên mọi thiết bị." />
+    <meta property="og:url" content="https://may-tinh.com/" />
+    <meta property="og:site_name" content="May-tinh.com" />
+    <meta property="og:image" content="https://may-tinh.com/images/calculator-og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="vi_VN" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Máy Tính - Máy Tính Online Khoa Học, Điện Tử, Miễn Phí | May-tinh.com" />
+    <meta name="twitter:description" content="Máy tính online miễn phí, máy tính khoa học, máy tính điện tử cho học sinh. Máy tính đơn giản, chính xác, nhanh chóng. Dễ sử dụng trên mọi thiết bị." />
+    <meta name="twitter:url" content="https://may-tinh.com/" />
+    <meta name="twitter:image" content="https://may-tinh.com/images/calculator-og.jpg" />
+    <meta name="twitter:site" content="@maytinhcom" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://may-tinh.com/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://may-tinh.com/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://may-tinh.com/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://may-tinh.com/apple-touch-icon-114x114.png" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#4285f4" />
+    <meta name="msapplication-TileColor" content="#4285f4" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@11.9.1/lib/browser/math.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="https://may-tinh.com" class="logo">
+                    <i class="fas fa-calculator"></i>
+                    Máy Tính
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Trang Chủ</a></li>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#about">Về Chúng Tôi</a></li>
+<li><a href="https://may-tinh.com/privacy-policy">Chính Sách Bảo Mật</a></li>
+<li><a href="https://may-tinh.com/terms">Điều Khoản Sử Dụng</a></li>
+<li><a href="https://may-tinh.com/contact">Liên Hệ</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobile-menu">
+                <ul class="mobile-menu-links">
+                    <li><a href="#home">Trang Chủ</a></li>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#about">Về Chúng Tôi</a></li>
+<li><a href="https://may-tinh.com/privacy-policy">Chính Sách Bảo Mật</a></li>
+<li><a href="https://may-tinh.com/terms">Điều Khoản Sử Dụng</a></li>
+<li><a href="https://may-tinh.com/contact">Liên Hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="https://may-tinh.com">Trang chủ</a>
+            <span class="separator">/</span>
+            <span>Máy Tính Online</span>
+        </div>
+    </div>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section" id="calculators">
+        <div class="container">
+            <div class="section-title">
+                <h1>Máy Tính Online - Máy Tính Khoa Học, Điện Tử, Miễn Phí</h1>
+                <p>Công cụ tính toán trực tuyến chính xác, nhanh chóng và dễ sử dụng cho mọi người Việt Nam</p>
+            </div>
+            
+            <div class="calculator">
+              <div class="header">
+                <button id="historyBtn" title="Lịch sử">📜</button>
+                <div id="modeToggle">
+                  <button id="basicBtn" class="active" title="Chế độ cơ bản">Cơ bản</button>
+                  <button id="sciBtn" title="Chế độ khoa học">Khoa học</button>
+                </div>
+              </div>
+              <div class="display-container">
+                <div id="expression" aria-label="Biểu thức hiển thị"></div>
+                <div id="display" contenteditable="true" spellcheck="false" inputmode="none" aria-label="Màn hình máy tính">0</div>
+              </div>
+              <div class="deg-rad">
+                <label><input type="radio" name="angleMode" value="deg" checked> Độ</label>
+                <label><input type="radio" name="angleMode" value="rad"> Rad</label>
+              </div>
+              <div class="buttons-container">
+                <div class="sci-buttons" id="sciButtons">
+                  <button onclick="insertFunction('sin')">sin</button>
+                  <button onclick="insertFunction('cos')">cos</button>
+                  <button onclick="insertFunction('tan')">tan</button>
+                  <button onclick="insertRoot()">√</button>
+                  <button onclick="insertFunction('asin')">sin⁻¹</button>
+                  <button onclick="insertFunction('acos')">cos⁻¹</button>
+                  <button onclick="insertFunction('atan')">tan⁻¹</button>
+                  <button onclick="insertCubeRoot()">³√</button>
+                  <button onclick="insertFunction('log')">log</button>
+                  <button onclick="insertFunction('ln')">ln</button>
+                  <button onclick="applySciFunc('inverse')">1/x</button>
+                  <button onclick="insertSquare()">x²</button>
+                  <button onclick="insertChar('π')">π</button>
+                  <button onclick="insertChar('e')">e</button>
+                  <button onclick="insertFactorial()">n!</button>
+                   <button onclick="insertCube()">x³</button>
+                  <button onclick="insertEXPX()">e^x</button>
+                  <button onclick="applySciFunc('abs')">|x|</button>
+                  <button onclick="insertScientificNotation()">EXP</button>
+                  <button onclick="insertPower()" title="Lũy thừa với số hiện tại">xʸ</button>
+                </div>
+                <div class="buttons" id="basicButtons">
+                  <button onclick="insertChar('(')">(</button>
+                  <button onclick="insertChar(')')">)</button>
+                  <button onclick="insertChar('/')">÷</button>
+                  <button id="acBackspaceBtn" onclick="toggleACBackspace()">AC</button>
+                  <button onclick="insertChar('7')">7</button>
+                  <button onclick="insertChar('8')">8</button>
+                  <button onclick="insertChar('9')">9</button>
+                  <button onclick="insertChar('+')">+</button>
+                  <button onclick="insertChar('4')">4</button>
+                  <button onclick="insertChar('5')">5</button>
+                  <button onclick="insertChar('6')">6</button>
+                  <button onclick="insertChar('-')">-</button>
+                  <button onclick="insertChar('1')">1</button>
+                  <button onclick="insertChar('2')">2</button>
+                  <button onclick="insertChar('3')">3</button>
+                  <button onclick="insertChar('*')">×</button>
+                  <button onclick="insertChar('%')" title="Phần trăm">%</button>
+                  <button onclick="insertChar('0')">0</button>
+                  <button onclick="insertChar('.')">.</button>
+                  <button onclick="calculate()">=</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Summary Section -->
+    <section class="summary-section" id="summary">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tất Cả Về Máy Tính Online</h2>
+                <p>Khám phá thế giới tính toán trực tuyến với máy tính của chúng tôi</p>
+            </div>
+            
+            <div class="summary-content">
+                <h3>Máy Tính Online - Giải Pháp Tính Toán Toàn Diện</h3>
+                <p>Trong thời đại công nghệ số hiện nay, việc có một công cụ <strong>máy tính</strong> đáng tin cậy và dễ tiếp cận là nhu cầu thiết yếu của mọi người. <strong>Máy tính online</strong> tại May-tinh.com được thiết kế để đáp ứng nhu cầu đó, mang đến một nền tảng tính toán trực tuyến hoàn toàn miễn phí, chính xác và dễ sử dụng cho mọi người Việt Nam.</p>
+                
+                <p><strong>Máy tính</strong> của chúng tôi không chỉ là một công cụ đơn giản thực hiện các phép tính cơ bản, mà còn là một giải pháp toàn diện với nhiều tính năng nâng cao. Từ <strong>máy tính cơ bản</strong> cho các phép tính cộng, trừ, nhân, chia, đến <strong>máy tính khoa học</strong> với các hàm lượng giác, logarit, lũy thừa, tất cả đều được tích hợp trong một giao diện thân thiện và trực quan.</p>
+                
+                <p>Điểm đặc biệt của <strong>máy tính online</strong> của chúng tôi là khả năng truy cập từ mọi thiết bị có kết nối internet. Bạn không cần phải cài đặt bất kỳ phần mềm nào hay lo lắng về việc máy tính của mình có đủ cấu hình để chạy các ứng dụng nặng. Chỉ cần mở trình duyệt web và truy cập May-tinh.com, bạn đã có ngay một công cụ tính toán mạnh mẽ trong tay.</p>
+                
+                <h3>Lịch Sử Phát Triển Của Máy Tính</h3>
+                <p><strong>Máy tính</strong> đã trải qua một hành trình phát triển ấn tượng từ những công cụ cơ bản nhất đến các siêu <strong>máy tính điện tử</strong> hiện đại. Khởi đầu với những vật dụng đếm đơn giản như ngón tay, viên sỏi, cây gậy, con người đã phát minh ra bàn tính cổ đại (abacus) ở Trung Quốc khoảng 2400 năm trước Công nguyên. Đây được coi là tổ tiên của <strong>máy tính</strong> hiện đại, cho phép thực hiện các phép tính cộng, trừ một cách nhanh chóng.</p>
+                
+                <p>Vào thế kỷ 17, nhà toán học người Pháp Blaise Pascal đã phát minh ra "Pascaline", <strong>máy tính cơ học</strong> đầu tiên có thể thực hiện các phép tính cộng và trừ. Tiếp theo, Gottfried Wilhelm Leibniz đã cải tiến <strong>máy tính</strong> của Pascal bằng cách thêm khả năng nhân và chia. Những phát minh này đặt nền móng cho sự phát triển của <strong>máy tính cơ học</strong> trong suốt thế kỷ 18 và 19.</p>
+                
+                <p>Đầu thế kỷ 20, Charles Babbage đã thiết kế "Difference Engine", một <strong>máy tính cơ học</strong> có thể tính toán các hàm toán học phức tạp. Ông cũng là người đưa ra ý tưởng về "Analytical Engine", một cỗ máy có thể được lập trình để thực hiện các phép tính khác nhau, được coi là tiền thân của <strong>máy tính hiện đại</strong>.</p>
+                
+                <p>Thập niên 1940 đánh dấu sự ra đời của <strong>máy tính điện tử</strong> đầu tiên - ENIAC (Electronic Numerical Integrator and Computer). Chiếc máy khổng lồ này nặng khoảng 30 tấn, tiêu thụ điện năng tương đương với một thị trấn nhỏ, nhưng nó đã mở ra kỷ nguyên mới của công nghệ tính toán.</p>
+                
+                <p>Từ những năm 1970, với sự ra đời của vi xử lý, <strong>máy tính cá nhân</strong> bắt đầu xuất hiện và dần trở nên phổ biến. Các công ty như Apple, IBM, và Microsoft đã đóng vai trò quan trọng trong việc đưa <strong>máy tính</strong> đến với mọi người dùng. Và ngày nay, với sự phát triển của internet, <strong>máy tính online</strong> đã trở thành một công cụ không thể thiếu trong cuộc sống hàng ngày.</p>
+                
+                <h3>Tầm Quan Trọng Của Máy Tính Trong Cuộc Sống Hiện Đại</h3>
+                <p><strong>Máy tính</strong> đã trở thành một phần không thể thiếu trong cuộc sống hiện đại, ảnh hưởng đến hầu hết mọi khía cạnh từ giáo dục, kinh doanh, khoa học đến giải trí. Trong giáo dục, <strong>máy tính</strong> giúp sinh viên và học sinh thực hiện các phép tính phức tạp, trực quan hóa các khái niệm toán học, và thực hiện các dự án nghiên cứu. Các giáo viên cũng sử dụng <strong>máy tính</strong> để tạo ra bài giảng tương tác và đánh giá kết quả học tập của học sinh.</p>
+                
+                <p>Trong kinh doanh, <strong>máy tính</strong> là công cụ thiết yếu cho việc quản lý tài chính, dự báo doanh thu, tính toán lợi nhuận, và phân tích dữ liệu. Các doanh nghiệp từ nhỏ đến lớn đều dựa vào <strong>máy tính</strong> để vận hành hiệu quả, từ việc quản lý kho hàng đến tối ưu hóa chuỗi cung ứng.</p>
+                
+                <p>Trong lĩnh vực khoa học và kỹ thuật, <strong>máy tính</strong> đóng vai trò trung tâm trong việc mô phỏng các hiện tượng tự nhiên, thiết kế các sản phẩm mới, và phân tích dữ liệu thí nghiệm. Các nhà khoa học sử dụng <strong>máy tính</strong> để giải các phương trình phức tạp, mô hình hóa hệ thống khí hậu, và thậm chí là khám phá vũ trụ.</p>
+                
+                <p>Trong y tế, <strong>máy tính</strong> giúp các bác sĩ chẩn đoán bệnh, phân tích kết quả xét nghiệm, và lập kế hoạch điều trị. Các thiết bị y tế hiện đại như máy MRI, CT scan đều dựa trên công nghệ tính toán để tạo ra hình ảnh chi tiết bên trong cơ thể con người.</p>
+                
+                <p>Ngay cả trong cuộc sống hàng ngày, <strong>máy tính</strong> cũng hiện diện trong mọi thứ từ điện thoại thông minh, đồng hồ thông minh đến các thiết bị gia dụng thông minh. Chúng giúp chúng ta quản lý thời gian, theo dõi sức khỏe, giải trí và kết nối với người khác.</p>
+                
+                <h3>Ưu Điểm Của Máy Tính Online So Với Máy Tính Cứng</h3>
+                <p><strong>Máy tính online</strong> tại May-tinh.com mang lại nhiều ưu điểm vượt trội so với <strong>máy tính cứng</strong> truyền thống:</p>
+                
+                <ul>
+                    <li><strong>Tính tiện lợi:</strong> Bạn có thể truy cập <strong>máy tính</strong> của chúng tôi từ bất kỳ đâu, chỉ cần có kết nối internet. Không cần mang theo một thiết bị riêng hay lo lắng về việc hết pin.</li>
+                    <li><strong>Không cần cài đặt:</strong> Không cần tải xuống hay cài đặt bất kỳ phần mềm nào. Chỉ cần mở trình duyệt và truy cập trang web là bạn có thể sử dụng ngay.</li>
+                    <li><strong>Luôn cập nhật:</strong> <strong>Máy tính online</strong> của chúng tôi luôn được cập nhật với các tính năng mới nhất và sửa lỗi mà bạn không cần làm gì cả.</li>
+                    <li><strong>Đa nền tảng:</strong> Hoạt động tốt trên mọi hệ điều hành (Windows, macOS, Linux) và mọi thiết bị (máy tính, điện thoại, máy tính bảng).</li>
+                    <li><strong>Tiết kiệm chi phí:</strong> Hoàn toàn <strong>miễn phí</strong>, không cần chi tiền mua <strong>máy tính cứng</strong> hay phần mềm đắt tiền.</li>
+                    <li><strong>Tính linh hoạt:</strong> Dễ dàng chuyển đổi giữa các loại <strong>máy tính</strong> khác nhau (cơ bản, khoa học) chỉ với một cú nhấp chuột.</li>
+                    <li><strong>Lưu trữ lịch sử:</strong> <strong>Máy tính</strong> của chúng tôi lưu trữ lịch sử tính toán giúp bạn dễ dàng theo dõi và kiểm tra lại các phép tính trước đó.</li>
+                    <li><strong>Bảo mật:</strong> Tất cả các phép tính được thực hiện trên trình duyệt của bạn, không có dữ liệu nào được gửi đến máy chủ, đảm bảo tính riêng tư.</li>
+                </ul>
+                
+                <h3>Các Loại Máy Tính Có Sẵn Tại May-tinh.com</h3>
+                <p>Tại May-tinh.com, chúng tôi cung cấp nhiều loại <strong>máy tính</strong> khác nhau để đáp ứng mọi nhu cầu tính toán của bạn:</p>
+                
+                <p><strong>Máy tính cơ bản:</strong> Đây là loại <strong>máy tính</strong> phổ biến nhất, thực hiện các phép tính cơ bản như cộng, trừ, nhân, chia, phần trăm, căn bậc hai. <strong>Máy tính cơ bản</strong> của chúng tôi còn có các chức năng nhớ (M+, M-, MR, MC) giúp bạn lưu trữ và sử dụng lại các kết quả tính toán.</p>
+                
+                <p><strong>Máy tính khoa học:</strong> Dành cho học sinh, sinh viên và các chuyên gia cần thực hiện các phép tính phức tạp. <strong>Máy tính khoa học</strong> của chúng tôi có các hàm lượng giác (sin, cos, tan), logarit (log, ln), hàm mũ (e^x, 10^x), và các phép toán khác như giai thừa, giá trị tuyệt đối, và các hằng số toán học (π, e).</p>
+                
+                <p>Ngoài ra, chúng tôi còn cung cấp các loại <strong>máy tính</strong> chuyên dụng khác như:</p>
+                
+                <ul>
+                    <li><strong>Máy tính tài chính:</strong> Tính lãi suất, vay vốn, đầu tư, tiết kiệm, và các công cụ tài chính khác.</li>
+                    <li><strong>Máy tính BMI:</strong> Tính chỉ số khối cơ thể, đánh giá tình trạng sức khỏe.</li>
+                    <li><strong>Máy tính chuyển đổi đơn vị:</strong> Chuyển đổi giữa các đơn vị đo lường, tiền tệ, nhiệt độ, và nhiều hơn nữa.</li>
+                    <li><strong>Máy tính thống kê:</strong> Tính toán các chỉ số thống kê như trung bình, phương sai, độ lệch chuẩn.</li>
+                </ul>
+                
+                <h3>Hướng Dẫn Sử Dụng Máy Tính Online</h3>
+                <p>Sử dụng <strong>máy tính online</strong> tại May-tinh.com rất đơn giản và trực quan. Dưới đây là hướng dẫn chi tiết cho từng loại <strong>máy tính</strong>:</p>
+                
+                <p><strong>Máy tính cơ bản:</strong></p>
+                <ol>
+                    <li>Mở trình duyệt web và truy cập May-tinh.com.</li>
+                    <li>Chọn tab "Cơ Bản" trên <strong>máy tính</strong>.</li>
+                    <li>Nhập số và phép toán bằng cách nhấp vào các nút trên màn hình hoặc sử dụng bàn phím.</li>
+                    <li>Sử dụng nút "AC" để xóa tất cả, nút "⌫" để xóa ký tự cuối cùng.</li>
+                    <li>Nhấn "=" để xem kết quả.</li>
+                    <li>Sử dụng các nút nhớ (M+, M-, MR, MC) để lưu trữ và gọi lại các giá trị.</li>
+                </ol>
+                
+                <p><strong>Máy tính khoa học:</strong></p>
+                <ol>
+                    <li>Mở trình duyệt web và truy cập May-tinh.com.</li>
+                    <li>Chọn tab "Khoa Học" trên <strong>máy tính</strong>.</li>
+                    <li>Chọn chế độ góc (DEG, RAD) ở trên màn hình.</li>
+                    <li>Nhập số và chọn hàm toán học bạn muốn sử dụng (sin, cos, tan, log, v.v.).</li>
+                    <li>Nhập giá trị trong ngoặc đơn sau hàm.</li>
+                    <li>Sử dụng các hằng số π và e bằng cách nhấp vào nút tương ứng.</li>
+                    <li>Nhấn "=" để xem kết quả.</li>
+                </ol>
+                
+                <h3>Mẹo Và Thủ Thuật Sử Dụng Máy Tính Hiệu Quả</h3>
+                <p>Để tận dụng tối đa khả năng của <strong>máy tính online</strong> tại May-tinh.com, dưới đây là một số mẹo và thủ thuật hữu ích:</p>
+                
+                <ul>
+                    <li><strong>Sử dụng bàn phím:</strong> Bạn có thể sử dụng bàn phím để nhập số và phép toán nhanh hơn. Các phím số, phép toán (+, -, *, /), và Enter (để tính kết quả) đều được hỗ trợ.</li>
+                    <li><strong>Sử dụng ngoặc đơn:</strong> Khi thực hiện các phép tính phức tạp, hãy sử dụng ngoặc đơn để đảm bảo thứ tự ưu tiên của phép tính. Ví dụ: (5 + 3) * 2 = 16.</li>
+                    <li><strong>Lưu trữ kết quả:</strong> Sử dụng các nút nhớ (M+, M-, MR, MC) để lưu trữ các kết quả tính toán và sử dụng lại sau này. Điều này đặc biệt hữu ích khi bạn cần sử dụng một giá trị nhiều lần trong các phép tính khác nhau.</li>
+                    <li><strong>Kiểm tra lịch sử:</strong> <strong>Máy tính</strong> của chúng tôi hiển thị lịch sử các phép tính gần nhất, giúp bạn dễ dàng theo dõi và kiểm tra lại các phép tính trước đó.</li>
+                    <li><strong>Sử dụng hàm khoa học:</strong> Khi sử dụng <strong>máy tính khoa học</strong>, hãy đảm bảo bạn đã chọn đúng đơn vị góc (DEG, RAD) cho các hàm lượng giác. <strong>Máy tính</strong> của chúng tôi mặc định sử dụng độ (DEG).</li>
+                    <li><strong>Sử dụng hàm giải tích:</strong> Khi sử dụng <strong>máy tính giải tích</strong>, hãy nhập đúng cú pháp cho các hàm. Ví dụ: ⌊x⌋(5.7) = 5, ⌈x⌉(5.7) = 6, round(5.7) = 6.</li>
+                    <li><strong>Sử dụng hằng số:</strong> <strong>Máy tính khoa học</strong> của chúng tôi có các hằng số toán học quan trọng như π (pi) và e (số Euler). Bạn có thể sử dụng chúng bằng cách nhấp vào nút tương ứng.</li>
+                    <li><strong>Tính toán lũy thừa:</strong> Để tính lũy thừa, bạn có thể sử dụng nút "^" trên <strong>máy tính khoa học</strong>. Ví dụ: 2^3 = 8.</li>
+                </ul>
+                
+                <h3>Ứng Dụng Thực Tế Của Máy Tính Trong Đời Sống</h3>
+                <p><strong>Máy tính</strong> không chỉ là một công cụ học thuật mà còn có nhiều ứng dụng thực tế trong đời sống hàng ngày. Dưới đây là một số ví dụ về cách bạn có thể sử dụng <strong>máy tính online</strong> của chúng tôi trong các tình huống thực tế:</p>
+                
+                <p><strong>Quản lý tài chính cá nhân:</strong> Sử dụng <strong>máy tính cơ bản</strong> để tính toán thu nhập, chi tiêu, và tiết kiệm hàng tháng. Bạn cũng có thể sử dụng <strong>máy tính tài chính</strong> để tính lãi suất khi vay tiền hoặc đầu tư.</p>
+                
+                <p><strong>Nấu ăn và làm bánh:</strong> Khi cần điều chỉnh công thức cho số người khác nhau, <strong>máy tính</strong> giúp bạn tính toán chính xác lượng nguyên liệu cần thiết. Ví dụ: nếu công thức cho 4 người nhưng bạn cần nấu cho 6 người, hãy sử dụng <strong>máy tính</strong> để tính tỷ lệ 6/4 = 1.5 và nhân tất cả nguyên liệu với 1.5.</p>
+                
+                <p><strong>Tu sửa nhà cửa:</strong> Khi cần tính toán lượng vật liệu như sơn, gạch, hoặc gỗ, <strong>máy tính</strong> giúp bạn ước tính chính xác số lượng cần mua, tránh lãng phí hoặc thiếu hụt.</p>
+                
+                <p><strong>Lập kế hoạch du lịch:</strong> Sử dụng <strong>máy tính</strong> để tính toán ngân sách du lịch, chuyển đổi tiền tệ, hoặc tính khoảng cách và thời gian di chuyển.</p>
+                
+                <p><strong>Giáo dục và học tập:</strong> Học sinh và sinh viên có thể sử dụng <strong>máy tính khoa học</strong> để giải các bài toán phức tạp, kiểm tra kết quả, và hiểu rõ hơn về các khái niệm toán học. <strong>Máy tính cho học sinh</strong> là công cụ không thể thiếu trong quá trình học tập.</p>
+                
+                <p><strong>Công việc và kinh doanh:</strong> Các chuyên gia sử dụng <strong>máy tính</strong> để tính toán tỷ suất lợi nhuận, phân tích dữ liệu bán hàng, và lập kế hoạch tài chính.</p>
+                
+                <p><strong>Sức khỏe và thể hình:</strong> Sử dụng <strong>máy tính BMI</strong> để theo dõi chỉ số khối cơ thể, hoặc tính toán lượng calo tiêu thụ khi tập luyện.</p>
+                
+                <h3>Tương Lai Của Máy Tính Online</h3>
+                <p>Công nghệ <strong>máy tính</strong> đang phát triển không ngừng và <strong>máy tính online</strong> cũng không ngoại lệ. Trong tương lai, chúng ta có thể kỳ vọng những cải tiến sau đây:</p>
+                
+                <ul>
+                    <li><strong>Trí tuệ nhân tạo (AI):</strong> <strong>Máy tính</strong> sẽ tích hợp AI để hiểu và giải quyết các vấn đề phức tạp hơn, thậm chí có thể gợi ý các phương pháp tính toán tối ưu.</li>
+                    <li><strong>Giao diện giọng nói:</strong> Người dùng có thể thực hiện các phép tính bằng giọng nói tự nhiên, giúp việc sử dụng <strong>máy tính</strong> trở nên tiện lợi hơn.</li>
+                    <li><strong>Thực tế tăng cường (AR):</strong> <strong>Máy tính</strong> có thể được tích hợp vào môi trường thực tế thông qua AR, cho phép người dùng thực hiện các phép tính trực tiếp trên các vật thể trong thế giới thực.</li>
+                    <li><strong>Tích hợp với các thiết bị IoT:</strong> <strong>Máy tính</strong> sẽ kết nối với các thiết bị thông minh khác trong nhà và nơi làm việc, tự động thực hiện các phép toán cần thiết.</li>
+                    <li><strong>Cá nhân hóa:</strong> <strong>Máy tính</strong> sẽ học thói quen sử dụng của từng người dùng và tùy chỉnh giao diện, chức năng để phù hợp nhất với nhu cầu cá nhân.</li>
+                    <li><strong>Tính toán đám mây nâng cao:</strong> Các phép tính phức tạp sẽ được thực hiện trên đám mây, cho phép <strong>máy tính online</strong> xử lý các tác vụ nặng mà không làm chậm thiết bị của người dùng.</li>
+                </ul>
+                
+                <h3>Kết Luận</h3>
+                <p><strong>Máy tính online</strong> tại May-tinh.com không chỉ là một công cụ tính toán đơn thuần mà còn là một giải pháp toàn diện cho mọi nhu cầu tính toán của bạn. Với giao diện thân thiện, tính năng đa dạng, và khả năng truy cập từ mọi thiết bị, <strong>máy tính</strong> của chúng tôi là lựa chọn lý tưởng cho học sinh, sinh viên, chuyên gia và mọi người dùng.</p>
+                
+                <p>Chúng tôi cam kết liên tục cải tiến và phát triển sản phẩm để mang đến trải nghiệm tốt nhất cho người dùng. Hãy truy cập May-tinh.com ngay hôm nay để khám phá sức mạnh của <strong>máy tính online</strong> và trải nghiệm sự tiện lợi mà nó mang lại!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tính Năng Nổi Bật Của Máy Tính Online</h2>
+                <p><strong>Máy tính online</strong> của chúng tôi có nhiều tính năng hữu ích cho mọi nhu cầu</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Dễ Sử Dụng</h3>
+                    <p>Giao diện <strong>máy tính</strong> đơn giản, trực quan, phù hợp với mọi đối tượng người dùng</p>
+                    <a href="#">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Tương Thích Đa Thiết Bị</h3>
+                    <p><strong>Máy tính</strong> hoạt động tốt trên máy tính, điện thoại và máy tính bảng</p>
+                    <a href="#">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Nhanh Chóng</h3>
+                    <p><strong>Máy tính</strong> tính toán tức thì, không cần chờ đợi, tiết kiệm thời gian</p>
+                    <a href="#">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Bảo Mật</h3>
+                    <p>Toàn bộ dữ liệu <strong>máy tính</strong> được xử lý tại trình duyệt, không lưu trữ thông tin</p>
+                    <a href="#">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Section 2 - For AdSense Auto Ads -->
+    <section class="ad-section">
+        <div class="container">
+            <!-- AdSense will automatically place ads here -->
+        </div>
+    </section>
+
+    <!-- Future Features Section -->
+    <section class="future-features-section" id="future">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tính Năng Tương Lai Của Máy Tính Online</h2>
+                <p>Khám phá các tính năng đột phá sẽ được cập nhật trong tương lai</p>
+            </div>
+            
+            <div class="future-features-grid">
+                <div class="future-feature-card">
+                    <div class="future-feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Trí Tuệ Nhân Tạo (AI)</h3>
+                    <p><strong>Máy tính</strong> sẽ tích hợp AI để hiểu và giải quyết các vấn đề phức tạp hơn, thậm chí có thể gợi ý các phương pháp tính toán tối ưu dựa trên ngữ cảnh và lịch sử sử dụng của người dùng.</p>
+                    <a href="#">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="future-feature-card">
+                    <div class="future-feature-icon">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <h3>Giao Diện Giọng Nói</h3>
+                    <p>Người dùng có thể thực hiện các phép tính bằng giọng nói tự nhiên, giúp việc sử dụng <strong>máy tính</strong> trở nên tiện lợi hơn, đặc biệt khi tay đang bận hoặc khi sử dụng trên thiết bị di động.</p>
+                    <a href="#">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="future-feature-card">
+                    <div class="future-feature-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3>Thực Tế Tăng Cường (AR)</h3>
+                    <p><strong>Máy tính</strong> sẽ được tích hợp vào môi trường thực tế thông qua AR, cho phép người dùng thực hiện các phép tính trực tiếp trên các vật thể trong thế giới thực thông qua camera điện thoại.</p>
+                    <a href="#">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="future-feature-card">
+                    <div class="future-feature-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Tích Hợp IoT</h3>
+                    <p><strong>Máy tính</strong> sẽ kết nối với các thiết bị thông minh khác trong nhà và nơi làm việc, tự động thực hiện các phép toán cần thiết và hiển thị kết quả trên các thiết bị được kết nối.</p>
+                    <a href="#">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="future-feature-card">
+                    <div class="future-feature-icon">
+                        <i class="fas fa-user-cog"></i>
+                    </div>
+                    <h3>Cá Nhân Hóa</h3>
+                    <p><strong>Máy tính</strong> sẽ học thói quen sử dụng của từng người dùng và tùy chỉnh giao diện, chức năng để phù hợp nhất với nhu cầu cá nhân, tạo ra trải nghiệm tính toán độc đáo cho mỗi người.</p>
+                    <a href="#">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="future-feature-card">
+                    <div class="future-feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Tính Toán Đám Mây Nâng Cao</h3>
+                    <p>Các phép tính phức tạp sẽ được thực hiện trên đám mây, cho phép <strong>máy tính online</strong> xử lý các tác vụ nặng mà không làm chậm thiết bị của người dùng, đồng thời cung cấp kết quả nhanh hơn.</p>
+                    <a href="#">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculators Section -->
+    <section class="calculators-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Các Loại Máy Tính Khác</h2>
+                <p>Chúng tôi cung cấp nhiều loại <strong>máy tính</strong> chuyên dụng cho mọi nhu cầu</p>
+            </div>
+            
+            <div class="calculators-grid">
+                <div class="calculator-card">
+                    <div class="calculator-card-img">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <div class="calculator-card-body">
+                        <h3>Máy Tính Tài Chính</h3>
+                        <p>Tính lãi suất, vay vốn, đầu tư, tiết kiệm và các công cụ tài chính khác</p>
+                        <a href="#">Sử dụng <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="calculator-card">
+                    <div class="calculator-card-img">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <div class="calculator-card-body">
+                        <h3>Máy Tính BMI</h3>
+                        <p>Tính chỉ số khối cơ thể, đánh giá tình trạng sức khỏe</p>
+                        <a href="#">Sử dụng <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="calculator-card">
+                    <div class="calculator-card-img">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <div class="calculator-card-body">
+                        <h3>Máy Tính Chuyển Đổi</h3>
+                        <p>Chuyển đổi đơn vị đo lường, tiền tệ, nhiệt độ và nhiều hơn nữa</p>
+                        <a href="#">Sử dụng <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="calculator-card">
+                    <div class="calculator-card-img">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="calculator-card-body">
+                        <h3>Máy Tính Thống Kê</h3>
+                        <p>Tính toán các chỉ số thống kê như trung bình, phương sai, độ lệch chuẩn</p>
+                        <a href="#">Sử dụng <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <div class="section-title">
+                <h2>Blog Máy Tính</h2>
+                <p>Các bài viết hữu ích về <strong>máy tính</strong> và toán học</p>
+            </div>
+            
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-img">
+                        Hình ảnh bài viết 1
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-date">15/10/2023</div>
+                        <h3 class="blog-title">Lịch Sử Phát Triển Của Máy Tính</h3>
+                        <p class="blog-excerpt">Khám phá hành trình phát triển ấn tượng của <strong>máy tính</strong> từ những công cụ cơ bản nhất đến các siêu <strong>máy tính điện tử</strong> hiện đại...</p>
+                        <a href="#" class="blog-link">Đọc thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-img">
+                        Hình ảnh bài viết 2
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-date">10/10/2023</div>
+                        <h3 class="blog-title">Cách Sử Dụng Máy Tính Khoa Học Hiệu Quả</h3>
+                        <p class="blog-excerpt">Hướng dẫn chi tiết cách sử dụng các hàm trên <strong>máy tính khoa học</strong> để giải quyết các bài toán phức tạp...</p>
+                        <a href="#" class="blog-link">Đọc thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-img">
+                        Hình ảnh bài viết 3
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-date">05/10/2023</div>
+                        <h3 class="blog-title">Ứng Dụng Của Máy Tính Trong Cuộc Sống Hàng Ngày</h3>
+                        <p class="blog-excerpt">Tìm hiểu cách <strong>máy tính</strong> giúp chúng ta giải quyết các vấn đề thực tế trong công việc, học tập và cuộc sống...</p>
+                        <a href="#" class="blog-link">Đọc thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Section 3 - For AdSense Auto Ads -->
+    <section class="ad-section">
+        <div class="container">
+            <!-- AdSense will automatically place ads here -->
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Câu Hỏi Thường Gặp Về Máy Tính</h2>
+                <p>Giải đáp các thắc mắc về <strong>máy tính online</strong> của chúng tôi</p>
+            </div>
+            
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <strong>Máy tính online</strong> có miễn phí không?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Có, <strong>máy tính online</strong> tại May-tinh.com hoàn toàn miễn phí. Bạn không cần trả bất kỳ khoản phí nào để sử dụng tất cả các tính năng của <strong>máy tính</strong> của chúng tôi.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Tôi có thể sử dụng <strong>máy tính</strong> trên điện thoại không?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Có, <strong>máy tính</strong> của chúng tôi được thiết kế để hoạt động tốt trên mọi thiết bị, bao gồm cả điện thoại thông minh và máy tính bảng. Giao diện sẽ tự động điều chỉnh để phù hợp với kích thước màn hình của bạn.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <strong>Máy tính</strong> có lưu trữ dữ liệu của tôi không?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Không, <strong>máy tính</strong> của chúng tôi không lưu trữ bất kỳ dữ liệu nào của bạn. Tất cả các phép tính được thực hiện trực tiếp trên trình duyệt của bạn và không được gửi đến máy chủ của chúng tôi.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Làm thế nào để chuyển giữa các loại <strong>máy tính</strong> khác nhau?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Bạn có thể dễ dàng chuyển đổi giữa các loại <strong>máy tính</strong> bằng cách nhấp vào các tab ở trên cùng của <strong>máy tính</strong>: "Cơ Bản", "Khoa Học". Mỗi tab sẽ hiển thị các chức năng tương ứng với loại <strong>máy tính</strong> đó.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Tôi có thể sử dụng bàn phím để nhập số không?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Có, bạn có thể sử dụng bàn phím để nhập số và các phép toán cơ bản. Các phím số, phép toán (+, -, *, /), và Enter (để tính kết quả) đều được hỗ trợ. Tuy nhiên, một số hàm đặc biệt có thể cần sử dụng chuột.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Về Chúng Tôi - May-tinh.com</h2>
+                <p>Giới thiệu về nền tảng <strong>máy tính online</strong> hàng đầu Việt Nam</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>May-tinh.com - Nền Tảng Máy Tính Online Hàng Đầu Việt Nam</h3>
+                    <p>May-tinh.com được thành lập với sứ mệnh mang đến cho người Việt Nam một công cụ <strong>máy tính</strong> trực tuyến miễn phí, chính xác và dễ sử dụng. Chúng tôi hiểu rằng trong cuộc sống hiện đại, việc có một <strong>máy tính</strong> đáng tin cậy là rất quan trọng cho công việc, học tập và cuộc sống hàng ngày.</p>
+                    
+                    <p>Đội ngũ của chúng tôi bao gồm các chuyên gia công nghệ, toán học và thiết kế giao diện người dùng, cùng làm việc để tạo ra một sản phẩm không chỉ chức năng mà còn thân thiện với người dùng. Chúng tôi liên tục cập nhật và cải tiến sản phẩm để đáp ứng nhu cầu ngày càng cao của người dùng.</p>
+                    
+                    <p>Ngoài <strong>máy tính cơ bản</strong>, chúng tôi còn phát triển các loại <strong>máy tính</strong> chuyên dụng như <strong>máy tính khoa học</strong>, <strong>máy tính tài chính</strong>, <strong>máy tính BMI</strong>, và nhiều công cụ khác để phục vụ mọi nhu cầu tính toán của bạn.</p>
+                    
+                    <p>Chúng tôi cam kết cung cấp dịch vụ <strong>miễn phí</strong> và không bao giờ thu thập thông tin cá nhân của người dùng. Tất cả các phép tính được thực hiện trực tiếp trên trình duyệt của bạn, đảm bảo tính riêng tư và bảo mật.</p>
+                </div>
+                
+                <div class="about-img">
+                    Hình ảnh về chúng tôi
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Về Máy Tính</h3>
+                    <p>May-tinh.com cung cấp các công cụ <strong>máy tính</strong> trực tuyến miễn phí, chính xác và dễ sử dụng cho mọi người Việt Nam.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liên Kết Nhanh</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Trang Chủ</a></li>
+                        <li><a href="#calculators">Máy Tính</a></li>
+                        <li><a href="#features">Tính Năng</a></li>
+                        <li><a href="#future">Tính Năng Tương Lai</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#about">Về Chúng Tôi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Loại Máy Tính</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Máy Tính Cơ Bản</a></li>
+                        <li><a href="#">Máy Tính Khoa Học</a></li>
+                        <li><a href="#">Máy Tính Tài Chính</a></li>
+                        <li><a href="#">Máy Tính BMI</a></li>
+                        <li><a href="#">Máy Tính Chuyển Đổi</a></li>
+                        <li><a href="#">Máy Tính Thống Kê</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liên Hệ</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Hà Nội, Việt Nam</li>
+                        <li><i class="fas fa-phone"></i> +84 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@may-tinh.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 May-tinh.com. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal moved outside calculator section -->
+    <div class="modal-overlay" id="historyModal" role="dialog" aria-modal="true" aria-labelledby="historyTitle">
+        <div class="modal">
+            <h2 id="historyTitle">Lịch sử tính toán</h2>
+            <div id="historyContent" tabindex="0"></div>
+            <button class="close-btn" onclick="closeHistory()" aria-label="Đóng lịch sử">×</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
